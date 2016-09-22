@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<!-- saved from url=(0090)http://www.epneiva.gov.co/components/com_nuevastic/contratacion/historico_contratacion.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="css/ckEstilo.css">
+  <link rel="stylesheet" href="css/style.css">
+
+    <title>Histórico Contratación </title>
+    <script src="calendario/js/jscal2.js"></script>
+ <script src="calendario/js/lang/es.js"></script>
+    <link rel="stylesheet" type="text/css" href="calendario/css/jscal2.css" />
+    <link rel="stylesheet" type="text/css" href="calendario/css/border-radius.css" />
+    <link rel="stylesheet" type="text/css" href="calendario/css/steel/steel.css" />
+    <link id="skinhelper-compact" type="text/css" rel="alternate stylesheet" href="calendario/css/reduce-spacing.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+<script type="text/JavaScript" src="js/jquery151.js"></script>
+ </head>
+  <body>
+
+
+ 		 <!-- CUERPO -->
+		 <div id="cuerpo">
+			<form method="post" id="form1" name="form1" action="">
+          
+  	 <!-- cargaForm  -->
+	<div class="cargaForm"> 
+
+	   <h3>Formulario de Contratación</h3>
+  <!-- area para cuadro de datos -->
+		<div id="area">
+
+ 		 <h4>CREACION</h4>
+
+ 
+
+	<label class="columna">
+	<span>Tipo de contrato </span>
+	<select name="cbotipo" id="cbotipo">
+	  <option value="1">Obra</option>
+	  <option value="2">Compraventa</option>
+	  <option value="3">Prestacion de Servicio</option>
+  
+        
+    </select>	
+    </label>
+
+
+	<label class="columna">
+	<span>Vigencia </span>
+	<select name="cbovigencia" id="cbovigencia">
+	  <option value="1">Vigencia 1</option>
+	  <option value="2">Vigencia 2</option>
+    
+    </select>	
+    </label>
+
+	<label class="columna">
+	<span>Número Contrato</span>
+	<input name="txtnumero" id="txtnumero" type="text" value="">
+	</label>
+    
+    <label class="columna">
+	<span>Identificacion</span>
+	<input name="txtidentificacion" id="txtidentificacion" type="text" value="">
+	</label>
+    
+    <label class="columna">
+	<span>Contratista</span>
+	<input name="txtcontratista" id="txtcontratista" type="text" value="">
+	</label>
+    
+    <label class="columna">
+	<span>Representante legal</span>
+	<input name="txtrepresentante" id="txtrepresentante" type="text" value="">
+	</label>
+    
+    <label class="columna">
+	<span>Fecha Inicio</span>
+	<input name="txtfechainicio" id="txtfechainicio" type="text" value="">
+     <script type="text/javascript">//<![CDATA[
+		
+              var cal = Calendar.setup({
+                  onSelect: function(cal) { cal.hide() },
+                  showTime: false
+              });
+              //para calendario compacto
+              var skin = document.getElementById("skinhelper-compact");
+              skin.rel = "stylesheet";
+              skin.disabled = false;              
+
+              cal.manageFields("txtfechainicio", "txtfechainicio", "%Y-%m-%d");              
+				
+    //]]></script> 
+	</label>
+    
+    <label class="columna">
+	<span>Fecha Fin</span>
+	<input name="txtfechafin" id="txtfechafin" type="text" value="">
+	</label>
+     <script type="text/javascript">//<![CDATA[
+		
+              var cal = Calendar.setup({
+                  onSelect: function(cal) { cal.hide() },
+                  showTime: false
+              });
+              //para calendario compacto
+              var skin = document.getElementById("skinhelper-compact");
+              skin.rel = "stylesheet";
+              skin.disabled = false;              
+
+              cal.manageFields("txtfechafin", "txtfechafin", "%Y-%m-%d");              
+				
+    //]]></script> 
+    
+     <label class="columna">
+	<span>Plazo Contrato</span>
+	<input name="txtplazo" id="txtplazo" type="text" value="">
+	</label>
+    
+    <label class="columna">
+	<span>Valor Contrato</span>
+	<input name="txtvalor" id="txtvalor" type="text" value="">
+	</label>
+    
+    <label class="columna">
+	<span>Objeto</span>
+	<textarea name="txtobjeto" id="txtobjeto" cols="45" rows="2"></textarea>
+    </label>
+    <div id="div_mensaje"></div>
+    <div id="div_contenido"></div>
+    
+    <div id="div_buton" align="center">
+<input name="buscar" type="button" id="buscar" value="Guardar" onclick="fguardar()" class="boton">
+</div>
+
+	<!-- fin area para cuadro de datos -->
+		</div>
+        </div>
+	<!-- fin cargaForm -->
+
+
+	 
+	 </form>
+ 
+
+		
+
+
+
+</div>
+  <!-- end CUERPO -->
+
+
+
+</body></html>

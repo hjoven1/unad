@@ -1,0 +1,69 @@
+#contenidos{
+	width:1000px;
+	height:auto;
+	margin:auto;
+	position:relative;
+
+}
+body{
+	background-image:url(../img/fondo-azul.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+h1{
+	font-family: 'Shadows Into Light', cursive;
+	color:white;
+	margin-left: 10px;
+	font-size: 60px;
+	text-align:center;
+}
+h2{
+	font-family: 'Indie Flower', cursive;
+	color:white;
+	margin-left: 10px;
+	font-size: 20px;
+	text-align:left;
+}
+header{
+	
+	width:1000px;
+	height:120px;
+	background: rgba(255, 255, 255, 3,5);
+}
+nav{
+width:1000px;
+height:50px;
+background:red;
+border-radius: 10px
+}
+ul{
+	margin:auto;
+	padding-top:4px;
+}
+li{
+	float:left;
+	border-radius: 10px;
+	list-style-type:none;
+	padding: 10px;
+	background:#00FFFF;
+	margin: 3px;
+	box-shadow: 0 0 10px red inset;
+}	
+li:hover{
+	background:#000000;
+	box-shadow: 0 0 10px blue inset  }
+
+
+.ancho_menu_home{width: 900px;}
+.ancho_menu_paginas{width: 970px;}
+
+.menu:link{color:#009966; text-decoration:none;}
+.menu:visited{color:#00FF33; text-decoration:none;}
+.menu:hover{color:#FF00FF; text-decoration:none; text-shadow: 0 0 5px white;}
+.menu:active{color:#FFFFFF; text-decoration:none;}
+
+
+
+
+
+

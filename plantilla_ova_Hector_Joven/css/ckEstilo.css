@@ -1,0 +1,483 @@
+/************************************************************************************************
+HECTOR ANDRES JOVEN MENDEZ
+UNAD
+2016
+************************************************************************************************/
+
+html,body{margin:0;padding:0}
+
+body {
+	padding:0;
+	margin:0;
+	font:85% Arial, Helvetica, sans-serif;
+	color:#000;
+	background-color: #FFF;
+}
+
+
+/******************************************************************************************************************
+CONTENEDOR
+******************************************************************************************************************/
+#contenedor {
+	float:left;
+	width:100%;
+	text-align: left;
+/*	border:1px solid #0000CC;*/
+}
+
+
+/******************************************************************************************************************
+CUERPO
+******************************************************************************************************************/
+#cuerpo{
+	margin:0 auto;
+	width: 900px;
+/*	border:1px solid blue;*/
+/*	
+	float:left;
+	display:block;
+	margin-bottom:20px;
+/*	margin:0 2% 0 25px;*
+	width:100%;
+	height:auto;
+/*	border:1px solid red;*/
+}
+/*
+#interna{
+	margin:0 auto;
+	width: 900px;
+	border:1px solid red;
+}
+*/
+
+#cuerpo h1{
+	margin: 0 0 0 0;
+	color: #006DB8;
+	border-bottom:2px solid #006DB8;
+}
+
+#cuerpo h3{
+	float:left;
+	display:block;
+	margin: 10px 0 0 0;
+	padding:4px 8px;
+	color: #FFF;
+	background-color: #006DB8;
+}
+
+#cuerpo p{
+	text-align:justify;
+}
+
+
+
+/******************************************************************************************************************
+FORMULARIO
+******************************************************************************************************************/
+form #area{
+	float:left;
+	display:block;
+	width:99%;
+	margin-bottom:10px;
+	padding:15px 5px 10px 13px;
+/*	padding:15px 10px 10px 10px;*/
+	background-color:#F2F2F2;
+	border: 1px solid #006DB8;
+}
+
+form #area h3{
+	width: 868px;
+	margin: 10px 0 10px 0;
+	color: #006DB8;
+	background: none;
+	border: 1px solid #CCC;
+}
+
+
+
+form #area h4{
+	float:left;
+	display:block;
+	width: 868px;
+	margin: 10px 0 15px 0;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #999;
+}
+
+
+form #area hr { 
+	clear: both;
+	height: 1px;
+	border: 1px;
+	margin: 15px 0 5px 0;
+	color: #999;
+	background-color: #999;
+}
+
+
+/* LABEL -------------------------------------------------------------------------- */
+form label{
+	float: left;
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+/*	border: 1px solid red;*/
+}
+form #area label{
+	width: 294px;
+	height: 44px;
+/*	border: 1px solid blue;*/
+}
+form label span{
+	float:left;
+	display:block;
+	width:100%;
+	margin-bottom:3px;
+/*	border: 1px solid red;*/
+}
+
+/* lado a lado */
+form #area label.large{
+	width: 100%;
+	height: auto;
+/*	border: 1px solid blue;*/
+}
+form #area label.large input{
+	margin-right: 4px;
+}
+form #area label.large input.large{
+	width: 868px;
+}
+
+form #area label.cajaTexto{
+	height: auto;
+}
+
+
+form #area label.columna{
+	width: 100%;
+	height: auto;
+/*	border: 1px solid blue;*/
+}
+
+#area .dobleMitad span{
+	margin-bottom: 2px;
+}
+
+
+/* SPAN -------------------------------------------------------------------------- */
+form #area span{
+	float:left;
+	padding-top:2px;
+/*	border: 1px solid blue;*/
+}
+
+form #area label span.sm,
+form #area label span span{
+	width:auto;
+	margin:0;
+	padding:0;
+/*	border: 1px solid yellow;*/
+}
+
+
+form #area label.columna span{
+	width: 210px;	
+}
+
+
+
+/* INPUT -------------------------------------------------------------------------- */
+form #area input{
+	width:280px;
+	height:18px;
+	padding:0px 0;
+	margin-bottom:4px;
+	font:88% Verdana, Arial, Helvetica, sans-serif;
+	padding:2px 2px 0 2px;
+/*	border: 1px solid #999;/*2B286B*/
+}
+
+form #area input.mini, form #area span.mini input{
+	float:left;
+	padding-top:2px;
+	margin-bottom:6px;
+	width:20px;
+	border:none;
+	/*border: 1px solid yellow;*/
+}
+
+form #area label span.mini label{
+	float:left;
+	display:block;
+	width:260px;
+	/*border: 1px solid green;*/
+}
+
+form input.diez {
+	width:82px;
+}
+form input.veinte {
+	width:164px;
+}
+
+
+/* TEXTAREA -------------------------------------------------------------------------- */
+form #area .dobleMitad textarea,
+form #area .dobleAncho textarea,
+form #area .dobleDelgado textarea{
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 3px;
+	border: 1px solid #999;
+}
+
+form #area textarea{
+	width:280px;
+	height: 100px;
+	margin-right: 4px;
+	border: 1px solid #999;
+}
+
+form #area label.txtAreaS,
+form #area label.txtAreaM,
+form #area label.txtAreaL{
+	float:left;
+	width:100%;
+	height:88px;
+}
+form #area label.txtAreaS textarea, form #area label.txtAreaM textarea, form #area label.txtAreaL textarea{
+	width:98%;
+	height:60px;
+	margin-bottom:10px;
+	font:88% Verdana, Arial, Helvetica, sans-serif;
+	padding:0 2px;
+}
+
+form #area label.txtAreaM{			height:158px;}
+form #area label.txtAreaM textarea{	height:130px;}
+
+form #area label.txtAreaL{			height:188px;}
+form #area label.txtAreaL textarea{	height:150px;}
+
+
+/* SELECT -------------------------------------------------------------------------- */
+form select{
+	margin-bottom:8px;
+	font:88% Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #999;
+}
+
+
+/* TABLA -------------------------------------------------------------------------- */
+#area table{
+	width: 100%;
+	margin:5px 0;	
+	border-collapse: collapse;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+}
+#area table.large{
+	width: 880px;
+}
+
+#area th {
+	padding:8px 10px;
+	text-align: center;
+	border: 1px solid #999;
+	border-bottom: 2px solid #999/*B18E00*/;
+	background-color: #BEBDD2;
+}
+#area tr.im {
+	background-color:#EBEBF1;
+}
+#area td {
+	padding:4px 6px;
+	border-left: 1px solid #999;
+	border-bottom: solid 1px #999;
+}
+
+#area table.escon, #area table.escon th, #area table.escon td{
+	border: none;
+}
+
+
+/*tabla encuesta -------------------------------*/
+#area table.encuesta{
+	width: 500px;
+	background-color: #FFF;
+/*	border: solid 1px red;*/
+}
+#area table.encuesta th{
+	background-color: #FFF;
+	border-bottom: none;
+}
+#area table.encuesta th.th, #area table.encuesta td.th{
+	padding:8px 10px;
+	text-align: center;
+	border: 1px solid #999;
+	border-bottom: 2px solid #999/*B18E00*/;
+	background-color: #BEBDD2;
+}
+#area table.encuesta td.fin{
+	background: #CFCFCF;
+}
+
+
+
+
+form #area label.columna table{
+	width: 300px;
+	background-color: #FFF;
+}
+
+form #area label.columna table th{
+	padding: 2px 10px;
+	background-color: #CCC;
+}
+
+
+/*sobre imposicion tabla a la derecha*/
+#scroll{
+	height:80px;
+	overflow: auto;
+}
+
+form #area label.columna table.scroll{
+	width: 270px;
+}
+
+
+
+/* DIV's DOBLE -------------------------------------------------------------------------- */
+#area .doble, #area .panel{
+	float:left;
+	display:block;
+	width:100%;
+	margin-bottom:5px;
+/*	border: 1px solid red;*/
+}
+
+#area .dobleMitad, #area .dobleAncho, #area .dobleDelgado{
+	float: left;
+	margin-right: 1%;
+	width: 48%;
+/*	border: 1px solid blue;*/
+}
+
+#area .dobleAncho{	width: 65%;}
+#area .dobleDelgado{	width: 25%;}
+
+
+
+#area .dobleI, #area .panelI, #area .panelIdos{
+	float:left;
+	display:block;
+	width:30px;
+/*	border: 1px solid blue;*/
+}
+
+
+#area .dobleD{ margin-left:35px;}
+
+#area .panelI{	width:140px;}
+#area .panelD{	margin-left:150px;}
+
+#area .panelIdos{	width:200px;}
+#area .panelDdos{	margin-left:210px;}
+
+
+#area a,
+.listaRes a{
+	color:#006DB8;
+	text-decoration: underline;
+}
+
+#area a:hover,
+.listaRes a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+
+
+.listaRes a{
+	text-decoration: none;
+}
+.listaRes li{
+	margin-bottom: 10px;
+}
+
+
+/* BOTONES -------------------------------------------------------------------------- */
+form #area input.boton, form input.boton {
+	float:left;
+	display: block;
+	margin-right: 10px;
+	width: auto;
+	height: auto;
+	color: #FFF;
+	background-color: #006DB8;
+}
+form input.boton:hover {
+	background-color: #005791;
+}
+
+
+
+/* SEPARADORES -------------------------------------------------------------------------- */
+#salto{	clear:both;}
+
+#separa, .dobleMitad #separa{
+	clear:both;
+	display: block;
+	width: 872px;
+	height: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #999;
+}
+.dobleMitad #separa{ width: 100%;}
+
+#saltoCarga{
+	clear:both;
+	height:25px;
+}
+
+#paolita{
+	clear:both;
+	display: block;
+	width: 872px;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+
+/*    boton cargar */
+
+
+#upload{
+	margin:30px 200px; padding:15px;
+	font-weight:bold; font-size:1.3em;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	background:#f2f2f2;
+	color:#3366cc;
+	border:1px solid #ccc;
+	width:180px;
+	cursor:pointer !important;
+	-moz-border-radius:5px; -webkit-border-radius:5px;
+}
+.darkbg{
+	background:#ddd !important;
+}
+#status{
+	font-family:Arial; padding:5px;
+	font-weight:bold; font-size:12px;
+
+}
+ul#files{ list-style:none; padding:0; margin:0; }
+ul#files li{ padding:10px; margin-bottom:2px; width:200px; float:left; margin-right:10px;}
+ul#files li img{ max-width:250px; max-height:50px; }
+.success{ background:#99f099; border:1px solid #339933; }
+.error{ background:#f0c6 }
+
